@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+    <ion-list>
+      <ion-list-header>
+        A
+      </ion-list-header>
+    
+      <ion-item>Temple Run1</ion-item>
+      <ion-item>Temple Run2</ion-item>
+      
+    </ion-list>
+    
+    <ion-list>
+      <ion-list-header>
+        B
+      </ion-list-header>
+      <ion-item>Subway Surfers Hongkong</ion-item>
+      <ion-item>Subway Surfers Paris</ion-item>
+      <ion-item>Subway Surfers France</ion-item>
+    </ion-list>
+    
+    <ion-list>
+      <ion-list-header>
+        C
+      </ion-list-header>
+      <ion-item>Piano Tiles beginners</ion-item>
+      <ion-item>Press Tiles</ion-item>
+      <ion-item>Champion</ion-item>
+            
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+</ion-content>
